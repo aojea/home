@@ -6,5 +6,3 @@ draft: true
 
 Hello, my name is Antonio Ojea
 
-https://twitter.com/Itsuugo
-https://github.com/aojea

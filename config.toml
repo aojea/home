@@ -1,3 +1,72 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://aojea.es/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = '/home/aojea'
+
+theme = "loveit"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    pre = ""
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 3
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+
+[params]
+  defaultTheme = "auto"
+  gitRepo = ""
+  dateFormat = "2006-01-02"
+  title = "/home/aojea)"
+  description = "Antonio Ojea personal home"
+  
+  # Header config
+  [params.header]
+    [params.header.title]
+      logo = ""
+      name = "/home/aojea"
+
+  # Home page config
+  [params.home]
+    [params.home.profile]
+      enable = true
+      avatarURL = "/static/pelegrin.jpg"
+      title = "/home/aojea"
+      name = "/home/aojea"
+      subtitle = "Antonio Ojea personal home"
+      typeit = true
+      social = true
+      disclaimer = ""
+    [params.home.posts]
+      enable = true
+      paginate = 6
+  # Social config in home page
+  [params.social]
+    GitHub = "aojea"
+    Linkedin = "ajojea"
+    Twitter = "Itsuugo"
